@@ -2,3 +2,4 @@
 reportlab
 google-genai
 pydantic
+python-dotenv
