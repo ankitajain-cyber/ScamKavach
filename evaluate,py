@@ -1,0 +1,58 @@
+import csv
+import time
+from analyzer import analyze_message
+from rules import check_rules
+
+def run_evaluation(dataset_path="dataset.csv"):
+    print("==================================================")
+    print("SCAMKAVACH BATCH FORENSIC BENCHMARK EVALUATION")
+    print("==================================================")
+    
+    correct_predictions = 0
+    total_samples = 0
+    latencies = []
+
+    try:
+        with open(dataset_path, mode='r', encoding='utf-8') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                total_samples += 1
+                payload = row['payload']
+                expected = row['expected_label'].lower()
+                
+                start_time = time.time()
+                result = analyze_message(payload)
+                elapsed = time.time() - start_time
+                latencies.append(elapsed)
+                
+                predicted_label = result.get('label', 'Unknown').lower()
+                
+                is_match = expected in predicted_label or predicted_label in expected
+                if is_match:
+                    correct_predictions += 1
+                    status = "✅ PASS"
+                else:
+                    status = "❌ MISMATCH"
+                
+                print(f"Sample {total_samples}: {status}")
+                print(f"  -> Payload Snippet: {payload[:50]}...")
+                print(f"  -> Expected: {expected.upper()} | Predicted: {predicted_label.upper()} ({result.get('confidence', 0)}% conf)")
+                print("-" * 50)
+                
+        accuracy = (correct_predictions / total_samples) * 100 if total_samples > 0 else 0
+        avg_latency = sum(latencies) / len(latencies) if latencies else 0
+        
+        print("\n==================================================")
+        print("EVALUATION SUMMARY REPORT")
+        print("==================================================")
+        print(f"Total Test Samples Evaluated : {total_samples}")
+        print(f"Correct Classifications      : {correct_predictions}")
+        print(f"Model Accuracy Benchmark     : {accuracy:.2f}%")
+        print(f"Average Inference Latency    : {avg_latency:.3f} seconds/sample")
+        print("==================================================")
+
+    except FileNotFoundError:
+        print(f"[-] Error: '{dataset_path}' not found. Please create the CSV file first.")
+
+if __name__ == "__main__":
+    run_evaluation()

@@ -1,0 +1,20 @@
+{
+  "last_updated": "2026-11-10",
+  "active_threats": [
+    {
+      "name": "TRAI / Digital Arrest Scam",
+      "description": "Fraudsters claim the victim's phone number will be blocked due to illegal activity (harassment, drugs) and transfer calls to fake 'CBI' or 'Cyber Police', demanding a 'security deposit' to unfreeze accounts.",
+      "keywords": ["TRAI", "Digital Arrest", "CBI", "Customs", "detained", "FIR", "Skype video"]
+    },
+    {
+      "name": "Telegram Task / ROI Trap",
+      "description": "Victims are offered part-time jobs liking YouTube videos or reviewing hotels. They are paid small amounts initially, then forced to invest in 'prepaid tasks' or 'crypto VIP tiers' to withdraw earnings.",
+      "keywords": ["YouTube likes", "Google Reviews", "Telegram HR", "Prepaid task", "VIP tier"]
+    },
+    {
+      "name": "Malicious APK Smishing",
+      "description": "SMS messages mimicking India Post, Electricity Boards, or Banks asking users to download an APK file to update KYC or pay pending bills. The APK steals SMS OTPs in the background.",
+      "keywords": ["update KYC", ".apk", "electricity bill update", "India Post tracking", "power disconnection"]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+payload,expected_label
+"Dear customer, your SBI account is blocked. Update KYC immediately via https://sbi-update-kyc.com or call 9876543210",Phishing
+"TRAI Alert: Your mobile numbers will be disconnected due to illegal money laundering. Report to Cyber Cell immediately.",Digital-Arrest
+"Hey, are we still meeting for coffee at Connaught Place around 5 PM today?",Safe
+"SEBI Warning: Beware of unauthorized trading apps promising 500% returns on VIP IPO blocks.",Phishing
+"Your Amazon order #402-91823 has shipped and will arrive by tomorrow via Blue Dart.",Safe
+"CBI Arrest Warrant issued against your Aadhaar card for multi-crore extortion. Join WhatsApp video call immediately.",Digital-Arrest

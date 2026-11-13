@@ -1,0 +1,376 @@
+{
+ "b82c8e0b0053615a07a8a5852e051d07faa4002d09fdb895007c568f3b6db67f": {
+  "label": "Phishing",
+  "confidence": 95,
+  "red_flags": [
+   "your SBI account is blocked",
+   "Update KYC immediately via https://sbi-update-kyc.com"
+  ],
+  "explanation_en": "This message pretends to be from SBI and claims your account is blocked. It provides a fake link to trick you into entering your banking credentials and personal details.",
+  "explanation_hi": "यह संदेश एसबीआई (SBI) की ओर से होने का नाटक करता है और दावा करता है कि आपका खाता ब्लॉक हो गया है। यह आपको अपने बैंक विवरण और व्यक्तिगत जानकारी दर्ज करने के लिए एक नकली लिंक प्रदान करता है।",
+  "advice_en": "Do not click on the link and do not call the provided phone number. Never share your bank details, passwords, or OTP with anyone. Check your account status directly through the official SBI app or bank branch.",
+  "advice_hi": "लिंक पर क्लिक न करें और दिए गए फोन नंबर पर कॉल न करें। कभी भी किसी के साथ अपने बैंक विवरण, पासवर्ड या ओटीपी साझा न करें। आधिकारिक एसबीआई ऐप या बैंक शाखा के माध्यम से सीधे अपने खाते की स्थिति की जांच करें।",
+  "is_kill_chain_active": false,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   }
+  ],
+  "_seconds": 2.69,
+  "_model": "gemini-3.5-flash-lite"
+ },
+ "bdf78c036cd114a72b5c14cf635d0a1291a86f56990c25611b1815321d300d8e": {
+  "label": "Digital-Arrest Scam",
+  "confidence": 100,
+  "red_flags": [
+   "CBI अधिकारी बोल रहा हूँ",
+   "पार्सल में ड्रग्स मिले हैं",
+   "आप डिजिटल अरेस्ट में हैं",
+   "किसी को न बताएं",
+   "तुरंत पैसे ट्रांसफर करें"
+  ],
+  "explanation_en": "This message is a classic digital arrest scam. The fraudster pretends to be a law enforcement officer, claims illegal items were found in a parcel, forces isolation by telling you not to tell anyone, and demands money under threat of arrest.",
+  "explanation_hi": "यह संदेश एक डिजिटल अरेस्ट स्कैम है। ठग खुद को पुलिस अधिकारी बताकर ड्रग्स या पार्सल का झूठा आरोप लगाता है, किसी को न बताने की धमकी देकर अलग-थलग करता है, और पैसे ट्रांसफर करने की मांग करता है।",
+  "advice_en": "Do not transfer any money or share personal details. Law enforcement agencies never conduct arrests or investigations over phone calls or video chats. Disconnect immediately and report to the National Cyber Crime Helpline (1930).",
+  "advice_hi": "कोई भी पैसा ट्रांसफर न करें और अपनी व्यक्तिगत जानकारी साझा न करें। कानून प्रवर्तन एजेंसियां कभी भी फोन कॉल या वीडियो चैट पर गिरफ्तार या पूछताछ नहीं करती हैं। तुरंत कॉल काट दें और नेशनल साइबर क्राइम हेल्पलाइन (1930) पर शिकायत करें।",
+  "is_kill_chain_active": true,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": true,
+    "exact_quote": "पार्सल में ड्रग्स मिले हैं",
+    "tactic_explanation": "The scammer initiates contact with a false claim about illegal items to create shock."
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": true,
+    "exact_quote": "मैं CBI अधिकारी बोल रहा हूँ",
+    "tactic_explanation": "Impersonating law enforcement to build fake credibility and fear."
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": true,
+    "exact_quote": "आप डिजिटल अरेस्ट में हैं",
+    "tactic_explanation": "Using a fake concept like digital arrest to terrify the victim into compliance."
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": true,
+    "exact_quote": "किसी को न बताएं",
+    "tactic_explanation": "Isolating the victim so they cannot verify the scam with family or real police."
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": true,
+    "exact_quote": "तुरंत पैसे ट्रांसफर करें",
+    "tactic_explanation": "Demanding money as a bribe or security deposit to close the fake case."
+   }
+  ],
+  "_seconds": 2.4,
+  "_model": "gemini-3.5-flash-lite"
+ },
+ "2ac8c9315c402c67c02bef9ce1bd378778b2f38840471afe24c92c734f304021": {
+  "label": "Lottery/Prize Scam",
+  "confidence": 100,
+  "red_flags": [
+   "Aapne 25 lakh ka lottery jeeta hai",
+   "Claim karne ke liye 5000 rupay processing fee bhejein"
+  ],
+  "explanation_en": "This message claims you have won a large lottery amount but asks you to send money first as a 'processing fee'. This is a classic advance-fee lottery scam designed to steal your money.",
+  "explanation_hi": "यह संदेश दावा करता है कि आपने एक बड़ी लॉtery जीती है लेकिन इसे क्लेーム करने के लिए 'प्रोसेसिंग फीस' के रूप में पैसे भेजने को कहता है। यह आपके पैसे चुराने के लिए एक क्लासिक लॉटरी घोटाला है।",
+  "advice_en": "Do not send any money or share your personal and financial details. Block the sender immediately.",
+  "advice_hi": "कमी भी पैसे न भेजें और न ही अपनी व्यक्तिगत या वित्तीय जानकारी साझा करें। प्रेषक को तुरंत ब्लॉक करें।",
+  "is_kill_chain_active": false,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   }
+  ],
+  "_seconds": 2.53,
+  "_model": "gemini-3.5-flash-lite"
+ },
+ "6a8db301c0749ba6b820e5cbc9e21da7cd7500b86d37109ebda3f86dd00a2e97": {
+  "label": "Job/Investment Scam",
+  "confidence": 98,
+  "red_flags": [
+   "Work from home job!",
+   "Earn Rs 5000 daily.",
+   "Pay Rs 999 registration fee on UPI to start today."
+  ],
+  "explanation_en": "This message is a classic job scam. Real jobs do not require you to pay money or a registration fee to start working. Fraudsters take this money and disappear.",
+  "explanation_hi": "यह संदेश एक नौकरी का घोटाला है। वास्तविक नौकरियां शुरू करने के लिए पैसे या पंजीकरण शुल्क की मांग नहीं करती हैं। ठग पैसे लेकर गायब हो जाते हैं।",
+  "advice_en": "Do not pay any money or share personal details. Block the sender immediately.",
+  "advice_hi": "कोई भी पैसा न दें और न ही व्यक्तिगत जानकारी साझा करें। प्रेषक को तुरंत ब्लॉक करें।",
+  "is_kill_chain_active": false,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   }
+  ],
+  "_seconds": 2.26,
+  "_model": "gemini-3.5-flash-lite"
+ },
+ "943eb95432c0e74fe75b369dfe83cf6fa64dcaa1ca724bb0130b0799094256f0": {
+  "label": "Phishing",
+  "confidence": 95,
+  "red_flags": [
+   "Your electricity will be disconnected tonight",
+   "http://pay-bijli.xyz"
+  ],
+  "explanation_en": "This message uses a fake threat about electricity disconnection to create panic and trick you into clicking a suspicious link and calling an unknown number to steal your financial details.",
+  "explanation_hi": "यह संदेश बिजली काटने की झूठी धमकी देकर आपको घबराहट में डालता है और एक संदिग्ध लिंक पर क्लिक करने या अनजान नंबर पर कॉल करने के लिए मजबूर करता है ताकि आपकी वित्तीय जानकारी चुराई जा सके।",
+  "advice_en": "Do not click the link or call the number. Check your electricity bill status only through your official electricity board app or website.",
+  "advice_hi": "लिंक पर क्लिक न करें और न ही नंबर पर कॉल करें। अपने बिजली बिल की स्थिति केवल अपने आधिकारिक बिजली बोर्ड ऐप या वेबसाइट के माध्यम से जांचें।",
+  "is_kill_chain_active": false,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": true,
+    "exact_quote": "Your electricity will be disconnected tonight",
+    "tactic_explanation": "Creates an immediate sense of trouble to grab attention."
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": true,
+    "exact_quote": "Call 98XXXXXX10 now and pay the pending bill via this link",
+    "tactic_explanation": "Demands immediate action to prevent the victim from verifying."
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": ""
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": true,
+    "exact_quote": "pay the pending bill via this link: http://pay-bijli.xyz",
+    "tactic_explanation": "Pushes the user to use a fake website to steal money or card details."
+   }
+  ],
+  "_seconds": 2.71,
+  "_model": "gemini-3.5-flash-lite"
+ },
+ "3b0ec2fc2f9b9e35278115f0da8b00d917c9b90a6e79e6ef3afc591beb2f514f": {
+  "label": "Phishing",
+  "confidence": 99,
+  "red_flags": [
+   "URGENT: Your account is locked",
+   "Send your OTP now"
+  ],
+  "explanation_en": "The message uses urgency to trick you into sharing your OTP. Legitimate organizations never ask for your OTP.",
+  "explanation_hi": "यह संदेश आपको जल्दबाजी में ओटीपी साझा करने के लिए धोखा देने की कोशिश करता है। वैध संगठन कभी भी ओटीपी नहीं मांगते हैं।",
+  "advice_en": "Never share your OTP or account details with anyone. Delete this message immediately.",
+  "advice_hi": "अपना ओटीपी या खाता विवरण किसी के साथ साझा न करें। इस संदेश को तुरंत हटा दें।",
+  "is_kill_chain_active": false,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No initial contact stage present."
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No authority figure was impersonated."
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": true,
+    "exact_quote": "URGENT: Your account is locked",
+    "tactic_explanation": "Creates panic by claiming the account is locked to force a quick response."
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No isolation tactics were used."
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": true,
+    "exact_quote": "Send your OTP now",
+    "tactic_explanation": "Directly asks for sensitive authentication data."
+   }
+  ],
+  "_seconds": 2.41,
+  "_model": "gemini-3.5-flash-lite"
+ },
+ "111c66149362b116dec822a1048645f09c752725d8934f7cbec466751b3e9230": {
+  "label": "Safe",
+  "confidence": 95,
+  "red_flags": [],
+  "explanation_en": "This message is a normal, friendly invitation for dinner with no scam indicators, links, or demands for money.",
+  "explanation_hi": "यह संदेश रात के खाने के लिए एक सामान्य और मित्रवत निमंत्रण है, जिसमें कोई स्कैम संकेत, लिंक या पैसे की मांग नहीं है।",
+  "advice_en": "No action needed. This appears to be a normal personal communication.",
+  "advice_hi": "किसी कार्रवाई की आवश्यकता नहीं है। यह एक सामान्य व्यक्तिगत बातचीत प्रतीत होती है।",
+  "is_kill_chain_active": false,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No scam tactics detected."
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No scam tactics detected."
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No scam tactics detected."
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No scam tactics detected."
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No scam tactics detected."
+   }
+  ],
+  "_seconds": 2.12,
+  "_model": "gemini-3.5-flash-lite"
+ },
+ "0ee3619e722b91d93072d39c38f0da2923939c2b0e6262fc953af2f694d6df10": {
+  "label": "Safe",
+  "confidence": 95,
+  "red_flags": [],
+  "explanation_en": "This message appears to be a standard bank transaction alert. Crucially, it instructs you to call the official number on the back of your card rather than providing a suspicious phone number or link to call back, which is a common indicator of phishing.",
+  "explanation_hi": "यह संदेश एक सामान्य बैंक लेनदेन अलर्ट प्रतीत होता है। महत्वपूर्ण बात यह है कि यह आपको किसी संदिग्ध नंबर पर कॉल करने या लिंक पर क्लिक करने के लिए कहने के बजाय आपके कार्ड के पीछे दिए गए आधिकारिक नंबर पर कॉल करने की सलाह देता है।",
+  "advice_en": "Always verify bank alerts by checking your official mobile banking app or calling the verified customer care number printed on your debit or credit card.",
+  "advice_hi": "अपने आधिकारिक मोबाइल बैंकिंग ऐप की जांच करके या अपने डेबिट या क्रेडिट कार्ड पर छपे सत्यापित ग्राहक सेवा नंबर पर कॉल करके हमेशा बैंक अलर्ट की पुष्टि करें।",
+  "is_kill_chain_active": false,
+  "kill_chain_timeline": [
+   {
+    "stage_name": "1. Initial Contact",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No malicious hook or deceptive contact is present."
+   },
+   {
+    "stage_name": "2. Establishing Authority",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No false authority is being claimed."
+   },
+   {
+    "stage_name": "3. Inducing Fear/Urgency",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "The message does not create artificial panic or threats."
+   },
+   {
+    "stage_name": "4. Isolation/Secrecy",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No requests for isolation or video calls."
+   },
+   {
+    "stage_name": "5. The Ask (Payment/Data)",
+    "detected": false,
+    "exact_quote": "",
+    "tactic_explanation": "No demand for money, OTP, or sensitive data."
+   }
+  ],
+  "_seconds": 2.74,
+  "_model": "gemini-3.5-flash-lite"
+ }
+}

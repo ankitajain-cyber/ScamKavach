@@ -1,0 +1,18 @@
+Message: URGENT: Dear Customer,
+Your SBI account ending in 4821 has been temporarily restricted because your KYC verification is incomplete. To avoid permanent closure and a ₹5,000 penalty, verify your details within the next 30 minutes using this secure link: https://sbi-verify-support.example.com.
+
+If you have already completed KYC, ignore this message. Otherwise, reply with your PAN number, date of birth, debit-card last four digits, and the OTP that will be sent to your phone. For assistance, call our customer-care executive at +91 98XXXXXX21.
+
+ध्यान दें: यह आखिरी चेतावनी है। Verification नहीं करने पर आपका account freeze कर दिया जाएगा।
+Label: Phishing
+Risk: 90/100
+----------------------------------------
+Message: URGENT: Dear Customer,
+Your SBI account ending in 4821 has been temporarily restricted because your KYC verification is incomplete. To avoid permanent closure and a ₹5,000 penalty, verify your details within the next 30 minutes using this secure link: https://sbi-verify-support.example.com.
+
+If you have already completed KYC, ignore this message. Otherwise, reply with your PAN number, date of birth, debit-card last four digits, and the OTP that will be sent to your phone. For assistance, call our customer-care executive at +91 98XXXXXX21.
+
+ध्यान दें: यह आखिरी चेतावनी है। Verification नहीं करने पर आपका account freeze कर दिया जाएगा।
+Label: Phishing
+Risk: 90/100
+----------------------------------------
