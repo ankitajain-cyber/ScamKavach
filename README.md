@@ -9,3 +9,9 @@ ScamKavach bridges everyday consumer scam protection with forensic-grade digital
 - **Bilingual Explainable AI (English & Hindi):** Translates risk scores and manipulation triggers into plain, actionable guidance.
 - **Forensic Evidence Preservation (SHA-256 + PDF):** Computes cryptographic payload hashes and packages findings into structured ReportLab PDF dossiers ready for cyber-crime reporting (e.g., Chakshu).
 - **Live OSINT Threat Feeds:** Integrates real-time cyber advisory RSS feeds to track active fraud campaigns in India.
+
+---
+
+### 🚀 Live Demo & Analytics Tracking
+* **Live App:** [Access ScamKavach on Streamlit Community Cloud](https://streamlit.app/?utm_source=github&utm_medium=readme&utm_campaign=scamkavach_repo)
+* **Repository:** [GitHub Repository](https://github.com/ankitajain-cyber/ScamKavach?utm_source=github&utm_medium=readme&utm_campaign=scamkavach_repo)
